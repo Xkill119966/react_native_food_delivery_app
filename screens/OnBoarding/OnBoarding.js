@@ -3,7 +3,6 @@ import { View, Text, ImageBackground, Image, Animated } from "react-native";
 
 import { constants, images, FONTS, SIZES, COLORS } from "../../constants";
 import { TextButton } from "../../components";
-import { log } from "react-native-reanimated";
 function renderHeader(params) {
   return (
     <View
@@ -121,18 +120,6 @@ const OnBoarding = ({ navigation }) => {
                   index: currentIndex + 1,
                   animated: true,
                 });
-                // let index = Math.ceil(Number(scrollX._value / SIZES.width));
-                // console.log(flatListRef);
-                // log;
-                // if (index < constants.onboarding_screens.length - 1) {
-                //   /// Scroll To Next
-                //   flatListRef?.current?.scrollToIndex({
-                //     index: index + 1,
-                //     animated: true,
-                //   });
-                // } else {
-                //   navigation.replace("SignIn");
-                // }
               }}
             />
           </View>

@@ -147,9 +147,8 @@ const SignIn = ({ navigation }) => {
               : COLORS.transparentPrimary,
           }}
           onPress={() => {
-            setEmail("");
-            setPassword("");
-            setEmailError("");
+            console.log("CALLL");
+            navigation.navigate("Home")
           }}
         />
         {/* Sign Up */}
