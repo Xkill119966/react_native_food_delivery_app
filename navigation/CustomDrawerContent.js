@@ -93,7 +93,7 @@ const  CustomDrawerContent = ({navigation , selectedTab , setSelectedTab}) => {
                            
                             onPress = {() => {
                                 setSelectedTab(constants.screens.home)
-                                navigation.navigate('MainLayout')
+                                navigation.navigate('Food')
                             }}
                         
                         />

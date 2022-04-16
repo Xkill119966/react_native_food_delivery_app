@@ -13,8 +13,8 @@ import {
   Section,
   VerticalFoodCard,
 } from "../../components";
-import FilterModal from './FilterModal';
-const Home = () => {
+import FilterModal from "./FilterModal";
+const Home = ({ navigation }) => {
   const [selectedCategoryId, setSelectedCategoryId] = React.useState(1);
   const [selectedMenuType, setSelectedMenuType] = React.useState(1);
   const [menuList, setMenuList] = React.useState([]);
@@ -93,7 +93,7 @@ const Home = () => {
 
         <TouchableOpacity
           onPress={() => {
-            setShowFilterModal(true)
+            setShowFilterModal(true);
           }}
         >
           <Image
@@ -183,7 +183,7 @@ const Home = () => {
                 }}
                 item={item}
                 onPress={() => {
-                  console.log("Horizontal Food Card");
+                  navigation.navigate("FoodDetail");
                 }}
               />
             );
@@ -215,7 +215,7 @@ const Home = () => {
                 }}
                 item={item}
                 onPress={() => {
-                  console.log("Vertical Food Card");
+                  navigation.navigate("FoodDetail");
                 }}
               />
             );
@@ -367,7 +367,7 @@ const Home = () => {
                 }}
                 item={item}
                 onPress={() => {
-                  console.log("Hio");
+                  navigation.navigate("FoodDetail");
                 }}
               />
             );
