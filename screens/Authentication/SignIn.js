@@ -36,7 +36,7 @@ const SignIn = ({ navigation }) => {
       >
         {/* FormInput */}
         <FormInput
-          label={"EMail"}
+          label={"Email"}
           keyboardType="email-address"
           autoCompleteType="email"
           onChange={(value) => {
@@ -54,7 +54,7 @@ const SignIn = ({ navigation }) => {
                 source={
                   email === "" || (email !== "" && emailError === "")
                     ? icons.correct
-                    : icons.cross
+                    : icons.cancel
                 }
                 style={{
                   height: 20,

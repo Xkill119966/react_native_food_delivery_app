@@ -16,6 +16,8 @@ const FormInput = ({
   autoCompleteType = "off",
   autoCapitalize = "none",
   errorMsg = "",
+  value = "",
+  maxLength = 100,
 }) => {
   return (
     <View
@@ -57,6 +59,7 @@ const FormInput = ({
             flex: 1,
             ...inputStyle,
           }}
+          value = {value}
           placeholder={placeholder}
           placeholderTextColor={COLORS.gray}
           secureTextEntry={secureTextEntry}
@@ -64,6 +67,7 @@ const FormInput = ({
           autoCompleteType={autoCompleteType}
           autoCapitalize={autoCapitalize}
           onChangeText={(text) => onChange(text)}
+          maxLength={maxLength}
         />
         {appendComponent}
       </View>
