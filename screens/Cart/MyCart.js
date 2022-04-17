@@ -5,6 +5,7 @@ import {
   IconButton,
   CartQuantityButton,
   StepperInput,
+  FooterTotal,
 } from "../../components";
 import { FONTS, SIZES, COLORS, icons, dummyData } from "../../constants";
 import { SwipeListView } from "react-native-swipe-list-view";
@@ -175,6 +176,7 @@ const MyCart = ({ navigation }) => {
       {renderCartList()}
 
       {/* Footer */}
+      <FooterTotal sumTotal={37.97} shippingFee={0.0} total={37 / 97} />
     </View>
   );
 };
