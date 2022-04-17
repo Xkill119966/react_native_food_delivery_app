@@ -3,6 +3,7 @@ import {
     View,
     Text,
 } from 'react-native';
+import { COLORS } from '../../constants';
 
 const Checkout = ({ navigation, route }) => {
 
