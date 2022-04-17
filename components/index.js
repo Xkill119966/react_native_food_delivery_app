@@ -11,6 +11,12 @@ import TextIconButton from './TextIconButton';
 import CustomSwitch from './CustomSwitch';
 import FormInput from './FormInput'
 import TextIconButtonForRatings from "./TextIconButtonForRatings";
+import CartQuantityButton from "./CartQuantityButton";
+import IconLabel from "./IconLabel";
+import LineDivider from "./LineDivider";
+import Rating from "./Rating";
+import StepperInput from "./StepperInput";
+
 export {
     Header,
     TabButton,
@@ -24,6 +30,11 @@ export {
     TextIconButtonForRatings,
     TextIconButton,
     CustomSwitch,
-    FormInput
+    FormInput,
+    CartQuantityButton,
+    IconLabel,
+    LineDivider,
+    Rating,
+    StepperInput
 
 }

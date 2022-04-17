@@ -1,35 +1,37 @@
-import React from 'react';
-import { Text , View } from 'react-native';
-import { FONTS } from '../constants';
+import React from "react";
+import { Text, View } from "react-native";
+import { FONTS } from "../constants";
 
+const Header = ({
+  containerStyle = {},
+  title = "Title",
+  titleStyle = {},
+  leftComponent,
+  rightComponent,
+}) => (
+  <View
+    style={{
+      flexDirection: "row",
+      ...containerStyle,
+    }}
+  >
+    {/* Left */}
 
+    {leftComponent}
 
-const Header = ({containerStyle , title , leftComponent, rightComponent}) => (
+    {/* Title */}
     <View
-        style = {{
-            flexDirection : 'row',
-            ...containerStyle
-        }}
+      style={{
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "center",
+      }}
     >
-
-        {/* Left */}
-
-        {leftComponent}
-
-        {/* Title */}
-        <View style = {{
-            flex : 1,
-            alignItems : 'center',
-            justifyContent : 'center'
-        }}>
-        <Text style = {{...FONTS.h3}}>
-            {title}
-        </Text>
-        </View>
-        {/* Right */}
-        {rightComponent}
-        
+      <Text style={{ ...FONTS.h3, ...titleStyle }}>{title}</Text>
     </View>
-)
+    {/* Right */}
+    {rightComponent}
+  </View>
+);
 
-export default Header
+export default Header;
