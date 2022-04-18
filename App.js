@@ -41,7 +41,7 @@ const App = () => {
           screenOptions={{
             headerShown: false,
           }}
-          initialRouteName={"MyCart"}
+          initialRouteName={"OnBoarding"}
         >
           <Stack.Screen name="OnBoarding" component={OnBoarding} />
 

@@ -11,7 +11,7 @@ import OTPInputView from "@twotalltotems/react-native-otp-input";
 import { FONTS, SIZES, COLORS, icons } from "../../constants";
 import { utils } from "../../utils";
 
-const Otp = () => {
+const Otp = ({navigation}) => {
   const [timer, setTimer] = React.useState(60);
 
   React.useEffect(() => {
@@ -95,7 +95,7 @@ const Otp = () => {
             backgroundColor: COLORS.primary,
           }}
           onPress={() => {
-            console.log("Continue");
+            navigation.navigate("Home")
           }}
         />
         <View

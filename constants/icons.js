@@ -41,6 +41,12 @@ const cancel = require("../assets/icons/cancel.png")
 const check_circle = require("../assets/icons/check_circle.png")
 const dotted_line = require('../assets/icons/dotted_line.png')
 const map = require('../assets/icons/map.png')
+const navigator = require('../assets/icons/navigator1.png')
+const location_pin = require('../assets/icons/location_pin.png')
+
+const globe = require("../assets/icons/globe.png")
+const focus = require("../assets/icons/focus.png")
+const call = require("../assets/icons/call.png")
 
 
 export default {
@@ -84,5 +90,11 @@ export default {
     location1,
     check_circle,
     dotted_line,
-    map
+    map,
+    navigator,
+    location_pin,
+    globe,
+    focus,
+    call
+
 }

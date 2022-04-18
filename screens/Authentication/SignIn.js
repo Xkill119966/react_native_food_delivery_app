@@ -39,6 +39,7 @@ const SignIn = ({ navigation }) => {
           label={"Email"}
           keyboardType="email-address"
           autoCompleteType="email"
+          value={email}
           onChange={(value) => {
             utils.validateEmail(value, setEmailError);
             setEmail(value);
@@ -78,6 +79,7 @@ const SignIn = ({ navigation }) => {
           containerStyle={{
             marginTop: SIZES.radius,
           }}
+          value={password}
           onChange={(value) => setPassword(value)}
           appendComponent={
             <TouchableOpacity
@@ -148,7 +150,7 @@ const SignIn = ({ navigation }) => {
           }}
           onPress={() => {
             console.log("CALLL");
-            navigation.navigate("Home")
+            navigation.navigate("Home");
           }}
         />
         {/* Sign Up */}
@@ -233,7 +235,6 @@ const SignIn = ({ navigation }) => {
             console.log("Facebook");
           }}
         /> */}
-
 
         {/* GOOGLE  */}
       </View>

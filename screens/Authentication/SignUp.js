@@ -49,6 +49,7 @@ const SignUp = ({ navigation }) => {
           label={"Email"}
           keyboardType="email-address"
           autoCompleteType="email"
+          value={email}
           onChange={(value) => {
             utils.validateEmail(value, setEmailError);
             setEmail(value);
@@ -88,6 +89,7 @@ const SignUp = ({ navigation }) => {
           }}
           keyboardType="email-address"
           autoCompleteType="email"
+          value={username}
           onChange={(value) => {
             setUsername(value);
           }}
@@ -126,6 +128,7 @@ const SignUp = ({ navigation }) => {
           containerStyle={{
             marginTop: SIZES.radius,
           }}
+          value = {password}
           onChange={(value) => {
             utils.validatePassword(value, setPasswordError);
             setPassword(value);
