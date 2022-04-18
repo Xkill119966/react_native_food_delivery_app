@@ -18,6 +18,8 @@ const love = require("../assets/icons/love.png")
 const calories = require("../assets/icons/calories.png")
 const home = require("../assets/icons/home.png")
 const location = require("../assets/icons/location.png")
+const location1 = require("../assets/icons/location1.png")
+
 const logout = require("../assets/icons/logout.png")
 const notification = require("../assets/icons/notification.png")
 const profile = require("../assets/icons/profile.png")
@@ -75,5 +77,6 @@ export default {
     delete_icon,
     check_on,
     check_off,
-    cancel
+    cancel,
+    location1
 }
