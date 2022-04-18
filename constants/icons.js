@@ -38,6 +38,9 @@ const check_on = require('../assets/icons/check_on.png')
 const check_off = require('../assets/icons/check_off.png')
 
 const cancel = require("../assets/icons/cancel.png")
+const check_circle = require("../assets/icons/check_circle.png")
+const dotted_line = require('../assets/icons/dotted_line.png')
+const map = require('../assets/icons/map.png')
 
 
 export default {
@@ -78,5 +81,8 @@ export default {
     check_on,
     check_off,
     cancel,
-    location1
+    location1,
+    check_circle,
+    dotted_line,
+    map
 }
